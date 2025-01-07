@@ -1,179 +1,134 @@
-<?php get_header();
-?>
-<!-- Slider Area -->
-<section class="slider">
-    <div class="hero-slider">
-        <!-- Start Single Slider -->
-        <div class="single-slider" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/slider2.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="text">
-                            <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-                            <div class="button">
-                                <a href="#" class="btn">Get Appointment</a>
-                                <a href="#" class="btn primary">Learn More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Single Slider -->
-        <!-- Start Single Slider -->
-        <div class="single-slider" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/slider.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="text">
-                            <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-                            <div class="button">
-                                <a href="#" class="btn">Get Appointment</a>
-                                <a href="#" class="btn primary">About Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Start End Slider -->
-        <!-- Start Single Slider -->
-        <div class="single-slider" style="background-image:url('<?php echo get_template_directory_uri(); ?>/assets/img/slider3.jpg')">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-7">
-                        <div class="text">
-                            <h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-                            <div class="button">
-                                <a href="#" class="btn">Get Appointment</a>
-                                <a href="#" class="btn primary">Conatct Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Single Slider -->
-    </div>
-</section>
-<!--/ End Slider Area -->
-
+<<<<<<< HEAD
+<?php get_header(); ?>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<?php get_template_part('template-parts/homepage/content','slider');?>
+		<!--/ End Slider Area -->
+		
 		<!-- Start Schedule Area -->
-		<section class="schedule">
-			<div class="container">
-				<div class="schedule-inner">
-					<div class="row">
-						<div class="col-lg-4 col-md-6 col-12 ">
-							<!-- single-schedule -->
-							<div class="single-schedule first">
-								<div class="inner">
-									<div class="icon">
-										<i class="fa fa-ambulance"></i>
-									</div>
-									<div class="single-content">
-										<span>Lorem Amet</span>
-										<h4>Emergency Cases</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-6 col-12">
-							<!-- single-schedule -->
-							<div class="single-schedule middle">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-prescription"></i>
-									</div>
-									<div class="single-content">
-										<span>Fusce Porttitor</span>
-										<h4>Doctors Timetable</h4>
-										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-12 col-12">
-							<!-- single-schedule -->
-							<div class="single-schedule last">
-								<div class="inner">
-									<div class="icon">
-										<i class="icofont-ui-clock"></i>
-									</div>
-									<div class="single-content">
-										<span>Donec luctus</span>
-										<h4>Opening Hours</h4>
-										<ul class="time-sidual">
-											<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-											<li class="day">Saturday <span>9.00-18.30</span></li>
-											<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-										</ul>
-										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part('template-parts/homepage/content','schedule');?>
 		<!--/End Start schedule Area -->
 
 		<!-- Start Feautes -->
-		<section class="Feautes section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>We Are Always Ready to Help You & Your Family</h2>
-							<img src="img/section-img.png" alt="#">
-							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-ambulance-cross"></i>
-							</div>
-							<h3>Emergency Help</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features">
-							<div class="signle-icon">
-								<i class="icofont icofont-medical-sign-alt"></i>
-							</div>
-							<h3>Enriched Pharmecy</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-					<div class="col-lg-4 col-12">
-						<!-- Start Single features -->
-						<div class="single-features last">
-							<div class="signle-icon">
-								<i class="icofont icofont-stethoscope"></i>
-							</div>
-							<h3>Medical Treatment</h3>
-							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
-						</div>
-						<!-- End Single features -->
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part('template-parts/homepage/content','feature');?>
 		<!--/ End Feautes -->
+		
+		<!-- Start Fun-facts -->
+		<?php get_template_part('template-parts/homepage/content','funfact');?>
+		<!--/ End Fun-facts -->
+		
+		<!-- Start Why choose -->
+		<?php get_template_part('template-parts/homepage/content','whychoose');?>
+		<!--/ End Why choose -->
+		
+		<!-- Start Call to action -->
+		<?php get_template_part('template-parts/homepage/content','tocallaction');?>
+		<!--/ End Call to action -->
+		
+		<!-- Start portfolio -->
+		<?php get_template_part('template-parts/homepage/content','portfolio');?>
+		<!--/ End portfolio -->
+		
+		<!-- Start service -->
+		<?php get_template_part('template-parts/homepage/content','service');?>
+		<!--/ End service -->
+		
+		<!-- Pricing Table -->
+		<?php get_template_part('template-parts//homepage/content','pricingtable');?>
+		<!--/ End Pricing Table -->
+		
+		<!-- Start Blog Area -->
+		<?php get_template_part('template-parts/homepage/content','blogarea');?>
+		<!-- End Blog Area -->
+		
+		<!-- Start clients -->
+		<?php get_template_part('template-parts/homepage/content','clients');?>
+		<!--/Ens clients -->
+		
+		<!-- Start Appointment -->
+		<?php get_template_part('template-parts/homepage/content','appointment');?>
+		<!-- End Appointment -->
+		
+		<!-- Start Newsletter Area -->
+		<?php get_template_part('template-parts/homepage/content','newsletter');?>
+		<!-- /End Newsletter Area -->
+		
+		<!-- Footer Area -->
+		
+		<!--/ End Footer Area -->
+		
+		<!-- jquery Min JS -->
         
-<?php get_footer();
-?>
+        <!-- jquery Migrate JS -->
+        
+        <!-- jquery Ui JS -->
+        
+        <!-- Easing JS -->
+        <!-- Color JS -->
+        
+		
+		<?php get_footer();?>
+		<?php wp_footer(); ?>
+    </body>
+</html>
+=======
+
+<?php get_header();?>
+		<!-- Slider Area -->
+			<?php get_template_part('template-parts/Homepage/Slider'); ?>
+		<!--/ End Slider Area -->
+
+		<!-- Start Schedule Area -->
+			<?php get_template_part('template-parts/Homepage/Schedule'); ?>
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+			<?php get_template_part('template-parts/Homepage/Features'); ?>
+		<!--/ End Feautes -->
+
+		<!-- Start Fun-facts -->
+			<?php get_template_part('template-parts/Homepage/Funfacts'); ?>
+		<!--/ End Fun-facts -->
+
+		<!-- Start Why choose -->
+			<?php get_template_part('template-parts/Homepage/Whycohose'); ?>
+		<!--/ End Why choose -->
+
+		<!-- Start Call to action -->
+			<?php get_template_part('template-parts/Homepage/CallToAction'); ?>
+		<!--/ End Call to action -->
+
+		<!-- Start portfolio -->
+			<?php get_template_part('template-parts/Homepage/Portfolio'); ?>
+		<!--/ End portfolio -->
+
+		<!-- Start service -->
+			<?php get_template_part('template-parts/Homepage/Services'); ?>
+		<!--/ End service -->
+			
+		<!-- Pricing Table -->
+			<?php get_template_part('template-parts/Homepage/Pricing'); ?>
+		<!--/ End Pricing Table -->
+
+
+
+		<!-- Start Blog Area -->
+			<?php get_template_part('template-parts/Homepage/Blog'); ?>
+		<!-- End Blog Area -->
+
+		<!-- Start clients -->
+			<?php get_template_part('template-parts/Homepage/Clients'); ?>
+		<!--/Ens clients -->
+
+		<!-- Start Appointment -->
+			<?php get_template_part('template-parts/Homepage/Appointment'); ?>
+		<!-- End Appointment -->
+
+		<!-- Start Newsletter Area -->
+			<?php get_template_part('template-parts/Homepage/Newsletter'); ?>
+		<!-- /End Newsletter Area -->
+
+		<!-- Start Footer Area -->
+		 <?php get_footer();?>
+>>>>>>> 3547f6931a18eed095ea33580ad7e7456a27c609

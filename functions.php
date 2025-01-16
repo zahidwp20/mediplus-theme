@@ -164,7 +164,7 @@ if (!function_exists('dsmb_enqueue_scripts')) {
         wp_enqueue_style('dsmb-style', get_theme_file_uri('assets/style.css'), [], $version, 'all');
 
         //Responsive CSS
-        wp_enqueue_style('dsmb-responsive', get_theme_file_uri('assets/css/responsive.cs'), [], $version, 'all');
+        wp_enqueue_style('dsmb-responsive', get_theme_file_uri('assets/css/responsive.css'), [], $version, 'all');
 
         //Theme main style
         wp_enqueue_style('dsmb-main', get_stylesheet_uri());
@@ -174,7 +174,7 @@ if (!function_exists('dsmb_enqueue_scripts')) {
          */
 
         //query Min JS
-        wp_enqueue_script('dsmb-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], $version, true);
+        wp_enqueue_script('dsmb-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', array(), $version, true);
         //jquery Migrate JS
         wp_enqueue_script('dsmb-jquery-migrate', get_theme_file_uri('assets/js/jquery-migrate-3.0.0.js'), ['dsmb-jquery'], $version, true);
         //jquery Ui JS

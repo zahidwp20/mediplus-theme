@@ -8,7 +8,7 @@
 			'order'			=> 'DESC',
 
 		]);
-		if($sliders->have_posts()):
+		
 			while($sliders->have_posts()): $sliders->the_post();
 				$image_url = get_the_post_thumbnail_url( get_the_ID(), $size = 'full' );
 				$dsmb_appointment_button_text = get_post_meta( get_the_ID(), '_dsmb_appointment_button_label' , true );
@@ -40,68 +40,9 @@
 					</div>
 				</div>
 				<!-- End Single Slider -->
+				<?php
+			endwhile;
+			wp_reset_postdata(); ?>
 
-			<?php
-		endwhile;
-		wp_reset_postdata();
-	else:
-		?>
-			<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url(<?php echo get_template_directory_uri() . '/assets/img/slider.jpg' ?>)">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url(<?php echo get_template_directory_uri() . '/assets/img/slider2.jpg' ?>)">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-				<!-- Start Single Slider -->
-				<div class="single-slider" style="background-image:url(<?php echo get_template_directory_uri() . '/assets/img/slider3.jpg' ?>)">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-7">
-								<div class="text">
-									<h1>We Provide <span>Medical</span> Services That You Can <span>Trust!</span></h1>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
-									<div class="button">
-										<a href="#" class="btn">Get Appointment</a>
-										<a href="#" class="btn primary">Learn More</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End Single Slider -->
-		<?php
-	endif;
-	?>
-</div>
+	</div>
 </section>

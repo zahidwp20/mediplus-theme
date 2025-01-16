@@ -1,3 +1,4 @@
+
 <?php get_header();?>
 		<!-- Slider Area -->
 			<?php get_template_part('template-parts/Homepage/Slider'); ?>
@@ -47,6 +48,10 @@
 
 		<!-- Start Appointment -->
 			<?php get_template_part('template-parts/Homepage/Appointment'); ?>
+		<!-- End Appointment -->
+
+		<!-- Start Appointment -->
+			<?php get_template_part('template-parts/Homepage/jj'); ?>
 		<!-- End Appointment -->
 
 		<!-- Start Newsletter Area -->

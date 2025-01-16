@@ -78,8 +78,8 @@
 							<?php 
 								$dsmb_options = get_option('dsmb_theme_options');
 								$copyrights_text = $dsmb_options['copy_right'] ? $dsmb_options['copy_right'] : 'All Rights Reserved by';
-								$dev_name = $dsmb_options['dev_name'] ? $dsmb_options['dev_name'] : 'Emran';
-								$dev_url = $dsmb_options['dev_url'] ? $dsmb_options['dev_url'] : 'https://fb.me/pcbnll';
+								$dev_name = $dsmb_options['dev_name'] ? $dsmb_options['dev_name'] : 'Zahid Hasan';
+								$dev_url = $dsmb_options['dev_url'] ? $dsmb_options['dev_url'] : 'https://fb.me/zahidh121';
 								$get_current_year = date('Y');
 							
 							?>

@@ -161,7 +161,7 @@ if (!function_exists('dsmb_enqueue_scripts')) {
         //Normalize CSS
         wp_enqueue_style('dsmb-normalize', get_theme_file_uri('assets/css/normalize.css'), [], $version, 'all');
         //Normalize CSS
-        wp_enqueue_style('dsmb-style', get_theme_file_uri('assets/style.css'), [], $version, 'all');
+        wp_enqueue_style('dsmb-style', get_theme_file_uri('assets/css/main-style.css'), [], $version, 'all');
 
         //Responsive CSS
         wp_enqueue_style('dsmb-responsive', get_theme_file_uri('assets/css/responsive.css'), [], $version, 'all');
@@ -239,3 +239,20 @@ if (!function_exists('dsmb_admin_enqueque')) {
 }
 
 add_action('admin_enqueue_scripts', 'dsmb_admin_enqueque');
+
+function my_theme_register_widget_areas() {
+    register_sidebar(array(
+        'name'          => __('Custom Widget Area', 'textdomain'),
+        'id'            => 'custom-widget-area',
+        'before_widget' => '<div class="custom-widget">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ));
+}
+add_action('widgets_init', 'my_theme_register_widget_areas');
+
+require_once get_theme_file_path('inc/custom-widgets/custom-widget.php');
+
+
+add_filter('use_block_editor_for_post', '__return_false');

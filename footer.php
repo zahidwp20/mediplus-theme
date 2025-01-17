@@ -16,6 +16,11 @@
 									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
 									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
 								</ul>
+								<?php 
+									if (is_active_sidebar('custom-widget-area')) {
+										dynamic_sidebar('custom-widget-area');
+									}
+								?>
 								<!-- End Social -->
 							</div>
 						</div>

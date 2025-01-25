@@ -11,7 +11,7 @@ $dsmb_blog_icon = $dsmb_options['blog_sec_icon'];
 				<div class="section-title">
 					<h2><?php echo $dsmb_blog_title ? esc_html($dsmb_blog_title) : esc_html('Keep up with Our Most Recent Medical News.'); ?>
 					</h2>
-					<img src="<?php echo $dsmb_blog_icon['url'] ? esc_url($dsmb_blog_icon['url']) : esc_url(get_template_directory_uri() . '/assets/img/section-img.png'); ?>"
+					<img src="<?php echo $dsmb_blog_icon ? esc_url($dsmb_blog_icon['url']) : esc_url(get_template_directory_uri() . '/assets/img/section-img.png'); ?>"
 						alt="<?php echo $dsmb_blog_icon ? esc_attr($dsmb_blog_icon['title']) : '' ?>">
 					<p><?php echo $dsmb_blog_desc ? esc_html($dsmb_blog_desc) : esc_html('Stay informed with the latest advancements and updates in the medical field through our dedicated news platform'); ?>
 					</p>
@@ -41,8 +41,9 @@ $dsmb_blog_icon = $dsmb_options['blog_sec_icon'];
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date"><?php echo get_the_date('d M, Y') ?></div>
-									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									<h2><a href="<?php echo the_permalink(); ?>"><?php the_title(); ?></a></h2>
 									<p class="text"><?php echo get_custom_excerpt(15); ?></p>
+									<a href="<?php echo the_permalink(); ?>" class="read-more">Read More</a>
 								</div>
 							</div>
 						</div>

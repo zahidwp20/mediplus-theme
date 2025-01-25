@@ -28,7 +28,7 @@
 					<?php
 				else:
 					?>
-						<li><i class="fa fa-phone"></i>+880 1753695972</li>
+						<li><i class="fa fa-phone"></i>+880 1700 0000</li>
 					<?php
 						endif;
 					?>
@@ -40,7 +40,7 @@
 					<?php
 				else:
 					?>
-						<li><i class="fa fa-envelope"></i><a href="mailto:emran@gmail.com">emran@gmail.com</a></li>
+						<li><i class="fa fa-envelope"></i><a href="mailto:zahidwp20@gmail.com">zahidwp20@gmail.com</a></li>
 					<?php
 						endif;
 					?>
